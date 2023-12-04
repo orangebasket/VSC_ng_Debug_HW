@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "PMFrame-Chrome",
+            "name": "app-Chrome",
             "type": "chrome",
             "request": "launch",
-            "preLaunchTask": "npm: start-pmframe",
+            "preLaunchTask": "npm: start-app",
             "postDebugTask": "closeOpenOCDTerminal",
             "url": "http://192.168.1.109:4200",
             "webRoot": "${workspaceFolder}"
