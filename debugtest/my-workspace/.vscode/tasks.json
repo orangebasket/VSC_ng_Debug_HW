@@ -21,6 +21,11 @@
         }
       },
       {
+        "label": "closeOpenOCDTerminal",
+        "type": "shell",
+        "command": "echo ${input:terminate}"
+      },
+      {
         "type": "npm",
         "script": "test",
         "isBackground": true,
@@ -38,6 +43,12 @@
           }
         }
       }
-    ]
+    ],
+    "inputs": [{
+      "id": "terminate",
+      "type": "command",
+      "command": "workbench.action.tasks.terminate",
+      "args": "terminateAll"
+    }]    
   }
   
